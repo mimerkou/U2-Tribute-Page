@@ -1,0 +1,364 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Headings */
+h2 {
+    text-transform: uppercase;
+}
+
+
+/* Heading h2 after block */
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #333;
+    content: " ";
+    width: 75px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+
+/* Navigation */
+.navbar {
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0.8;
+}
+
+.brand {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+
+/* Home Section */
+#home-section {
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../img/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    animation-duration: 0.5s;
+    animation-delay: 0.3s;
+}
+
+.btn-discography {
+    border: 1px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    animation-duration: 0.5s;
+    animation-delay: 0.7s;
+}
+
+.btn-discography:hover {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #333;
+}
+
+
+/* Band Section */
+.band-heading {
+    margin: 10px auto;
+}
+
+.band-info {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* Music Section */
+#music {
+    background-color: #efefef;
+}
+
+.music-heading {
+    margin: 10px auto;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ff2626;
+}
+  
+.image-container:hover .overlay {
+    opacity: 0.8;
+}
+  
+.image-text {
+    width: 100%;
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.modal {
+    margin-top: 2.5rem;
+}
+
+.close {
+    font-size: 40px;
+    position: absolute;
+    top: 5px;
+    right: 12px;
+}
+
+.modal h4 {
+    text-decoration: underline;
+}
+
+
+/* Tours Section */
+.tours-heading {
+    margin: 10px auto;
+}
+
+.tour-item {
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    /* box-shadow: 4px 4px 5px rgba(170, 170, 170, 0.6); */
+    box-shadow: 0 10px 6px -6px rgba(170, 170, 170, 0.6);
+}
+  
+.tour-info {
+    align-items: center;
+}
+  
+.tour-info img {
+    width: auto;
+    height: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.tour-info h6 {
+    margin-top: -8px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+/* Video Section */
+#video-play {
+    min-height: 200px;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../img/u2-live03.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    text-align: center;
+    color: #fff;
+}
+
+#video-play a {
+    color: #fff;
+}
+
+
+/* Facts */
+#facts {
+    background-color: #efefef;
+}
+
+.facts-heading {
+    margin: 0 auto;
+    padding-bottom: 2.8rem;
+}
+
+.facts-item h3 {
+    padding-top: 15px;
+    font-size: 2.3rem;
+}
+
+.facts-item p {
+    margin-top: -15px;
+    font-size: 1.6rem;
+}
+
+.icon {
+    color: #777;
+}
+
+
+
+/* Some big ideas */
+#idea {
+    height: auto;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../img/U2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+
+#idea h2::after {
+    background-color: #fff;
+}
+
+.bono {
+    font-style: italic;
+}
+
+.block:before {
+    content: '\201C';
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -55px;
+    left: 5px;
+}
+
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+
+.social p {
+    font-size: 22px;
+}
+
+.social a {
+    text-decoration: none;
+    margin-right: 25px;
+    color: #fff;
+}
+
+.social a:last-child {
+    margin-right: 0;
+}
+
+.facebook:hover {
+    color: #3b5999;
+    transition: color 0.3s;
+}
+
+.twitter:hover {
+    color: #55acee;
+    transition: color 0.3s;
+}
+
+.instagram:hover {
+    color: #e4405f;
+    transition: color 0.3s;
+}
+
+.line {
+    height: 1.5px;
+    width: 150px;
+    margin: 40px auto 10px auto;
+    background-color: #fff;
+}
+
+.mike {
+    margin-top: 20px;
+}
+
+
+/* Media queries */
+@media only screen and (max-width: 1023px) {
+    .facts-item {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .tour-info {
+        flex-direction: column;
+    }
+
+    .tour-info h4 {
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    p {
+        font-size: 1.1rem;
+    }
+
+    blockquote {
+        font-size: 1.1rem;
+    }
+
+    .modal {
+        max-height: 650px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+
+    .hero-heading {
+        font-size: 2.3rem;
+    }
+}
